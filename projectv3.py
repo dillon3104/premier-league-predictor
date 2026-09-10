@@ -4,8 +4,9 @@ from understat import Understat
 import aiohttp
 import asyncio
 import json
+import os
 
-API_FOOTBALL_KEY = "d6715e87ec4d257bfdb7bd2463cf9e62"
+API_FOOTBALL_KEY = os.environ["API_FOOTBALL_KEY"]
 API_FOOTBALL_URL = "https://v3.football.api-sports.io/fixtures"
 
 def fetch_api_football():
